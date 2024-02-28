@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: 'Arial';
+}
+
+#heading {
+  background-color: crimson;
+  text-decoration: underline;
+}
+
+.expense-items {
+  padding: 5px;
+}
+
+.expense-list {
+  background-color: aqua;
+  list-style: none;
+}
