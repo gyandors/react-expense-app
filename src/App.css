@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  background-color: lightgray;
+}
+
+.heading {
+  text-align: center;
+  text-decoration: underline;
+}

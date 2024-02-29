@@ -1,0 +1,28 @@
+.expense-items {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: gray;
+  margin: 5px 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.item-description{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.item-price{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: solid 2px;
+}
+
+h3{
+    margin: 0px;
+    padding-right: 70px;
+    color: white;
+}
