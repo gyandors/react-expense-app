@@ -1,9 +1,16 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 body {
-  margin: 0;
   background-color: lightgray;
 }
 
 .heading {
+  margin: 20px;
   text-align: center;
-  text-decoration: underline;
+  border-radius: 10px;
+  background-color: #221f1f;
+  color: white;
 }

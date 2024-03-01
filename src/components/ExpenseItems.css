@@ -1,28 +1,32 @@
 .expense-items {
-  display: flex;
-  justify-content: space-evenly;
   background-color: gray;
   margin: 5px 20px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
 }
 
-.item-description{
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
+.expense-location {
+  display: inline-block;
+  width: 150px;
+  margin-right: 150px;
 }
 
-.item-price{
-    padding: 10px;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    border: solid 2px;
+.item-description {
+  display: inline-block;
 }
 
-h3{
-    margin: 0px;
-    padding-right: 70px;
-    color: white;
+.item-title {
+  display: inline-block;
+  width: 150px;
+  color: white;
+}
+
+.item-price {
+  display: inline-block;
+  background-color: #221f1f;
+  color: white;
+  padding: 5px;
+  margin-left: 50px;
+  border-radius: 5px;
+  border: solid 2px;
 }

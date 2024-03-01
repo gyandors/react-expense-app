@@ -5,32 +5,32 @@ function App() {
   const expenses = [
     {
       title: 'Car insurance',
-      amount: '4000',
-      time: new Date(2023, 4, 23),
+      amount: '14900',
+      date: new Date(2023, 4, 23),
       location: 'National Insurance',
     },
     {
       title: 'Collage fees',
       amount: '20000',
-      time: new Date(2023, 6, 3),
-      location: 'Collage',
+      date: new Date(2023, 6, 3),
+      location: 'KASCC Collage',
     },
     {
       title: 'Grocery',
       amount: '1300',
-      time: new Date(2023, 9, 14),
-      location: 'Ring road',
+      date: new Date(2023, 9, 14),
+      location: 'Relience mart',
     },
     {
       title: 'New bike',
       amount: '86000',
-      time: new Date(2023, 2, 23),
+      date: new Date(2023, 2, 23),
       location: 'Bajaj showroom',
     },
     {
       title: 'New mobile',
-      amount: '49990',
-      time: new Date(2023, 8, 23),
+      amount: '89990',
+      date: new Date(2023, 8, 23),
       location: 'Apple shop',
     },
   ];
@@ -42,9 +42,9 @@ function App() {
           <ExpenseItems
             title={item.title}
             amount={item.amount}
-            time={item.time}
+            date={item.date}
             location={item.location}
-          ></ExpenseItems>
+          />
         );
       })}
     </div>
