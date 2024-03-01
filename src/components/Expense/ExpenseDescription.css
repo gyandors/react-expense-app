@@ -1,10 +1,3 @@
-.expense-items {
-  background-color: gray;
-  margin: 5px 20px;
-  padding: 10px;
-  border-radius: 10px;
-}
-
 .expense-location {
   display: inline-block;
   width: 150px;
