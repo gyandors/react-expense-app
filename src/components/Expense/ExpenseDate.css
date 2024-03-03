@@ -1,15 +1,15 @@
 .expense-date {
   display: inline-block;
-  width: 70px;
-  margin-right: 20px;
+  width: 80px;
+  margin-right: 5px;
   border: solid 1px;
   border-radius: 5px;
   padding: 5px;
   text-align: center;
-  background-color: #221f1f;
+  background-color: #070f2b;
   color: white;
 }
 
 .day {
-  font-size: 25px;
+  font-size: 30px;
 }

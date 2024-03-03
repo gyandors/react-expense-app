@@ -1,8 +1,7 @@
 .expense-items {
-  background-color: gray;
-  margin: 5px 20px;
+  background-color: #535c91;
+  margin: 5px 0px;
   padding: 10px;
   border-radius: 10px;
+  overflow: hidden;
 }
-
-

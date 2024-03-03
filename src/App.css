@@ -4,13 +4,20 @@
 }
 
 body {
-  background-color: lightgray;
+  background-color: #c6c4ee;
+}
+
+#root {
+  width: 50vw;
+  margin: auto;
 }
 
 .heading {
-  margin: 20px;
+  margin: 15px 0px;
+  padding: 5px;
   text-align: center;
   border-radius: 10px;
-  background-color: #221f1f;
+  background-color: #070f2b;
   color: white;
+  overflow: hidden;
 }
