@@ -1,0 +1,13 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #c6c4ee;
+}
+
+#root {
+  width: 60vw;
+  margin: auto;
+}

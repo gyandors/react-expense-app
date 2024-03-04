@@ -1,16 +1,16 @@
 .expense-location {
-  display: inline-block;
   width: 100px;
   color: white;
 }
 
 .item-description {
-  float: right;
   width: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .item-title {
-  display: inline-block;
   width: 100px;
   color: white;
 }
@@ -18,7 +18,7 @@
 .item-price {
   background-color: #070f2b;
   color: white;
-  font: 20px 'Times New Roman';
+  font-size: 20px;
   padding: 5px;
   border-radius: 5px;
   border: solid 1px;
