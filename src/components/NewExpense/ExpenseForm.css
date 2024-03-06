@@ -1,0 +1,10 @@
+.expense-form {
+  background-color: blueviolet;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  overflow: hidden;
+}
