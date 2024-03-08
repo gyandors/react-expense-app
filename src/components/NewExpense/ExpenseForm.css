@@ -7,4 +7,5 @@
   flex-wrap: wrap;
   align-content: flex-start;
   overflow: hidden;
+  gap: 10px;
 }

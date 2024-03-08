@@ -1,3 +1,4 @@
+import React from 'react';
 import ExpenseItems from './components/Expenses/ExpenseItems';
 import ExpenseForm from './components/NewExpense/ExpenseForm';
 import './App.css';
@@ -34,7 +35,7 @@ function App() {
     },
   ];
   return (
-    <div>
+    <>
       <h1 className="heading">Expense Manager</h1>
       <ExpenseForm />
       {expenses.map((item) => {
@@ -48,7 +49,7 @@ function App() {
           />
         );
       })}
-    </div>
+    </>
   );
 }
 

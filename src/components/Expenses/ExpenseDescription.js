@@ -4,7 +4,7 @@ import './ExpenseDescription.css';
 function ExpenseDescription(props) {
   const [amount, setAmount] = useState(props.amount);
 
-  function clickHandler() {
+  function clickHandler(event) {
     setAmount(100);
   }
 
