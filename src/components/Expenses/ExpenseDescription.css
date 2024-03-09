@@ -1,10 +1,5 @@
-.expense-location {
-  width: 100px;
-  color: white;
-}
-
 .item-description {
-  width: 200px;
+  width: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,25 +7,28 @@
 }
 
 .item-title {
-  width: 100px;
+  width: 150px;
   color: white;
 }
 
 .item-price {
-  background-color: #070f2b;
   color: white;
   font-size: 20px;
   padding: 5px;
-  height: max-content;
+  /* height: max-content; */
+  border-bottom: solid #070f2b;
+}
+
+.del-btn {
+  background-color: #070f2b;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  padding: 5px;
   border-radius: 5px;
   border: solid 1px;
 }
 
-#del-btn {
-  background-color: #070f2b;
-  color: white;
-  font-size: 20px;
-  padding: 5px;
-  border-radius: 5px;
-  border: solid 1px;
+.del-btn:hover {
+  text-shadow: 1px 1px 4px white;
 }

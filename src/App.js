@@ -1,51 +1,53 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ExpenseItems from './components/Expenses/ExpenseItems';
-import ExpenseForm from './components/NewExpense/ExpenseForm';
+import NewExpense from './components/NewExpense/NewExpense';
 import './App.css';
 
 function App() {
   const expenses = [
     {
-      id: 0,
+      id: Math.random(),
       title: 'Car insurance',
       amount: '14900',
-      date: new Date(2023, 4, 23),
-      location: 'National Insurance',
+      date: new Date('2023-4-23'),
     },
     {
-      id: 1,
+      id: Math.random(),
       title: 'Collage fees',
       amount: '20000',
       date: new Date(2023, 6, 3),
-      location: 'KASCC Collage',
     },
     {
-      id: 2,
+      id: Math.random(),
       title: 'Grocery',
       amount: '1300',
       date: new Date(2023, 9, 14),
-      location: 'Relience mart',
     },
     {
-      id: 3,
+      id: Math.random(),
       title: 'New bike',
       amount: '86000',
       date: new Date(2023, 2, 23),
-      location: 'Bajaj showroom',
     },
   ];
+
+  const [updateExpenses, setUpdateExpenses] = useState(expenses);
+
+  function addExpenseHandler(fromNewExpense) {
+    setUpdateExpenses([...updateExpenses, fromNewExpense]);
+  }
+
   return (
     <>
       <h1 className="heading">Expense Manager</h1>
-      <ExpenseForm />
-      {expenses.map((item) => {
+      <NewExpense onAddExpense={addExpenseHandler} />
+      {updateExpenses.map((item) => {
         return (
           <ExpenseItems
             key={item.id} //Only for removing warnings in console
             title={item.title}
             amount={item.amount}
             date={item.date}
-            location={item.location}
           />
         );
       })}
