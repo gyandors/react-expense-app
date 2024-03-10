@@ -65,6 +65,7 @@ function ExpenseForm(props) {
         type="date"
         value={enteredDate}
         min={'2020-01-01'}
+        max={'2025-01-01'}
         placeholder="Date"
         onChange={dateChangeHandler}
       />

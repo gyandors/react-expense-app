@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ExpenseItems from './components/Expenses/ExpenseItems';
 import NewExpense from './components/NewExpense/NewExpense';
+import ExpenseFilter from './components/Expenses/ExpenseFilter';
 import './App.css';
 
 function App() {
@@ -32,15 +33,22 @@ function App() {
   ];
 
   const [updateExpenses, setUpdateExpenses] = useState(expenses);
-
   function addExpenseHandler(fromNewExpense) {
     setUpdateExpenses([...updateExpenses, fromNewExpense]);
   }
 
+  const [filteredYear, setFilteredYear] = useState('2024');
+  function changeFilterHandler(selectedYear) {
+    setFilteredYear(selectedYear);
+  }
   return (
     <>
       <h1 className="heading">Expense Manager</h1>
       <NewExpense onAddExpense={addExpenseHandler} />
+      <ExpenseFilter
+        selected={filteredYear}
+        onChangeFilter={changeFilterHandler}
+      />
       {updateExpenses.map((item) => {
         return (
           <ExpenseItems
