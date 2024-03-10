@@ -53,6 +53,7 @@ function ExpenseForm(props) {
         value={enteredTitle}
         placeholder="Expense title"
         onChange={titleChangeHandler}
+        required
       />
       <input
         type="number"
@@ -60,16 +61,20 @@ function ExpenseForm(props) {
         value={enteredAmount}
         placeholder="Expense amount"
         onChange={amountChangeHandler}
+        required
       />
       <input
         type="date"
         value={enteredDate}
         min={'2020-01-01'}
-        max={'2025-01-01'}
+        max={'2025-12-31'}
         placeholder="Date"
         onChange={dateChangeHandler}
+        required
       />
-      <input type="submit" value="Add" />
+      <button className="add-btn" type="submit">
+        Add
+      </button>
     </form>
   );
 }

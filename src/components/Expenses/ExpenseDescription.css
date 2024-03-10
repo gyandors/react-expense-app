@@ -15,7 +15,6 @@
   color: white;
   font-size: 20px;
   padding: 5px;
-  /* height: max-content; */
   border-bottom: solid #070f2b;
 }
 
@@ -30,5 +29,5 @@
 }
 
 .del-btn:hover {
-  text-shadow: 1px 1px 4px white;
+  background-color: #25356e;
 }

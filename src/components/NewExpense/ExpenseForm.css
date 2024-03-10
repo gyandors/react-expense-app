@@ -1,3 +1,29 @@
 .form-control {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form-control input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 0px;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.add-btn {
+  padding: 5px;
+  background-color: #ffffff;
+  border: 0px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  flex-grow: 0.1;
+}
+
+.add-btn:hover {
+  background-color: #3b3b3b;
+  color: #ffffff;
 }
