@@ -13,17 +13,25 @@
   flex-grow: 1;
 }
 
-.add-btn {
+.submit-btn,
+.reset-btn {
   padding: 5px;
+
   background-color: #ffffff;
   border: 0px;
+  height: 100%;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
   flex-grow: 0.1;
 }
 
-.add-btn:hover {
+.reset-btn {
+  margin-left: 5px;
+}
+
+.submit-btn:hover,
+.reset-btn:hover {
   background-color: #070f2b;
   color: #ffffff;
 }

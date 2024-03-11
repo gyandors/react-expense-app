@@ -4,4 +4,19 @@
   padding: 10px;
   border-radius: 10px;
   overflow: hidden;
+  text-align: center;
+}
+
+.add-expense {
+  background-color: #070f2b;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 1px;
+}
+
+.add-expense:hover {
+  background-color: #25356e;
 }
