@@ -48,6 +48,39 @@ function App() {
     return item.date.getFullYear().toString() === filteredYear;
   });
 
+  let expenseContent = (
+    <p style={{ color: 'white', fontWeight: 'bolder' }}>No expenses found.</p>
+  );
+
+  if (filteredExpense.length === 1) {
+    expenseContent = filteredExpense.map((item) => {
+      return (
+        <>
+          <p style={{ color: 'white', fontWeight: 'bolder' }}>
+            Only single Expense here. Please add more...
+          </p>
+          <ExpenseItems
+            key={item.id} //Only for removing error in console
+            title={item.title}
+            amount={item.amount}
+            date={item.date}
+          />
+        </>
+      );
+    });
+  } else if (filteredExpense.length > 1) {
+    expenseContent = filteredExpense.map((item) => {
+      return (
+        <ExpenseItems
+          key={item.id} //Only for removing error in console
+          title={item.title}
+          amount={item.amount}
+          date={item.date}
+        />
+      );
+    });
+  }
+
   return (
     <>
       <h1 className="heading">Expense Manager</h1>
@@ -57,16 +90,7 @@ function App() {
           selected={filteredYear}
           onChangeFilter={changeFilterHandler}
         />
-        {filteredExpense.map((item) => {
-          return (
-            <ExpenseItems
-              key={item.id} //Only for removing error in console
-              title={item.title}
-              amount={item.amount}
-              date={item.date}
-            />
-          );
-        })}
+        {expenseContent}
       </div>
     </>
   );
